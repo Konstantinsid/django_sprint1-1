@@ -1,5 +1,5 @@
+{% extends "base.html" %}
 {% load static %}
-    {% extends "base.html" %}
     {% block title %}
     <title>Лента записей</title>
     {% endblock %}
@@ -19,7 +19,7 @@
               {{ post.date }}
             </li>
             <li>
-             Категория: <a href={{ post.category }}>{{ post.category }}</a>
+             Категория: <a href="category/{{ post.category }}">{{ post.category }}</a>
             </li>
           </ul>          
           <!-- Первые 10 слов -->
